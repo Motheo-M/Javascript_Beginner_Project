@@ -1,4 +1,4 @@
-// import { webTechs } from "./webTechs.js";
+import { webTechs } from "./webtechs.js";
 import { countries } from './countries.js';
 
 // --------------------------------------------- Exercise 1 --------------------------------------------//
@@ -100,9 +100,20 @@ shoppingCart[3] = 'Green tea'
 console.log(shoppingCart)
 
 console.log('Countries')
-countries.includes('Ethiopia') ? console.log('ETHIOPIA') : console.log(countries.push('Ethiopa'))
+countries.includes('Ethiopia') ? console.log('ETHIOPIA') : countries.push('Ethiopa')
 console.log(countries)
 
+console.log('WebTechs')
+let val = webTechs.includes('Sass')
+console.log(val)
+
+webTechs.includes('Sass') ? console.log('Sass is a CSS preprocess') : webTechs.push('Sass')
+console.log(webTechs)
+
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+const fullStack = frontEnd.concat(backEnd)
+console.log(fullStack)
 
 // --------------------------------------------- Exercise 3 --------------------------------------------//
 console.log('// --------------------------------------------- Exercise 3 --------------------------------------------//')
