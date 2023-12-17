@@ -1,29 +1,8 @@
+// import { webTechs } from "./webTechs.js";
+import { countries } from './countries.js';
+
 // --------------------------------------------- Exercise 1 --------------------------------------------//
 console.log('// --------------------------------------------- Exercise 1 --------------------------------------------//')
-
-const countries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya'
-  ]
-  
-  const webTechs = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Redux',
-    'Node',
-    'MongoDB'
-  ]
 
   //1
   const arr1 = Array()
@@ -99,6 +78,30 @@ const countries = [
 
 // --------------------------------------------- Exercise 2 --------------------------------------------//
 console.log('// --------------------------------------------- Exercise 2 --------------------------------------------//')
+
+let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+
+console.log(text.split(" ").length)
+
+console.log('Shopping cart')
+
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+
+shoppingCart.unshift('Meat')
+console.log(shoppingCart)
+
+shoppingCart.push('Sugar')
+console.log(shoppingCart)
+
+shoppingCart.splice(4, 1)  // removes element 'Honey' from shopping cart
+console.log(shoppingCart)
+
+shoppingCart[3] = 'Green tea'
+console.log(shoppingCart)
+
+console.log('Countries')
+countries.includes('Ethiopia') ? console.log('ETHIOPIA') : console.log(countries.push('Ethiopa'))
+console.log(countries)
 
 
 // --------------------------------------------- Exercise 3 --------------------------------------------//
