@@ -35,5 +35,3 @@ const periOfRec = function(l, w) {
 };
 
 periOfRec(2, 3);
-
-
