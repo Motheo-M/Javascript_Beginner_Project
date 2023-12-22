@@ -124,3 +124,7 @@ const users = {
   console.log(`${lastuser} has ${max} skills at their disposal!`)
   console.log(`${logCount} users are looged on!`)
   console.log(`${pointsCount} has 50 or more points!`)
+
+  const copyUsers = Object.assign({}, users)
+
+  console.log(copyUsers)
