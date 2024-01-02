@@ -1,5 +1,7 @@
 // import { countries } from './countries.js';
 
+import { countries } from "./countries.js"
+
 // // a callback function, the name of the function could be any name
 // const callback = (n) => {
 //   return n ** 2
@@ -63,3 +65,24 @@
 // --------------------------------------------- Exercise 1 --------------------------------------------//
 console.log('// --------------------------------------------- Exercise 1 --------------------------------------------//')
 
+
+countries.forEach(element => {
+  console.log(element)
+});
+// countries.sort((a,b) => {
+//   if(a.name < b.name) return 1
+//   if(a.name > b.name) return -1
+//   return 0
+// })
+
+// countries.sort((a,b) => {
+//   if(a.capital < b.capital) return 1
+//   if(a.capital > b.capital) return -1
+//   return 0
+// })
+
+// countries.sort((a,b) => {
+//   if(a.population < b.population) return 1
+//   if(a.population > b.population) return -1
+//   return 0
+// })
