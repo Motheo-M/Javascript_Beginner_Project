@@ -57,32 +57,32 @@
 // console.log(titles)
 
 // Adding text to HTML Element using textContent or InnerHTML
-const titles = document.querySelectorAll('h1')
-titles[3].textContent = 'Fourth Title';
+// const titles = document.querySelectorAll('h1')
+// titles[3].textContent = 'Fourth Title';
 
-const lists = `
-        <li>30DaysOfPython Challenge Done</li>
-        <li>30DaysOfJavaScript Challenge Ongoing</li>
-        <li>30DaysOfReact Challenge Coming</li>
-        <li>30DaysOfFullStack Challenge Coming</li>
-        <li>30DaysOfDataAnalysis Challenge Coming</li>
-        <li>30DaysOfReactNative Challenge Coming</li>
-        <li>30DaysOfMachineLearning Challenge Coming</li>`
-const ul = document.querySelector('ul')
-ul.innerHTML = lists
-setTimeout(() => {
-        ul.innerHTML = ''
-}, 2000);
+// const lists = `
+//         <li>30DaysOfPython Challenge Done</li>
+//         <li>30DaysOfJavaScript Challenge Ongoing</li>
+//         <li>30DaysOfReact Challenge Coming</li>
+//         <li>30DaysOfFullStack Challenge Coming</li>
+//         <li>30DaysOfDataAnalysis Challenge Coming</li>
+//         <li>30DaysOfReactNative Challenge Coming</li>
+//         <li>30DaysOfMachineLearning Challenge Coming</li>`
+// const ul = document.querySelector('ul')
+// ul.innerHTML = lists
+// setTimeout(() => {
+//         ul.innerHTML = ''
+// }, 2000);
 
-titles.forEach((title, i) => {
-  title.style.fontSize = '24px' // all titles will have 24px font size
-  if (i % 2 === 0) {
-    title.style.color = 'green'
-    title.style.backgroundColor = 'red'
-    title.style.fontSize = '20px'
-  } else {
-    title.style.color = 'red'
-    title.style.backgroundColor = 'green'
-    title.style.fontSize = '30px'
-  }
-})
+// titles.forEach((title, i) => {
+//   title.style.fontSize = '24px' // all titles will have 24px font size
+//   if (i % 2 === 0) {
+//     title.style.color = 'green'
+//     title.style.backgroundColor = 'red'
+//     title.style.fontSize = '20px'
+//   } else {
+//     title.style.color = 'red'
+//     title.style.backgroundColor = 'green'
+//     title.style.fontSize = '30px'
+//   }
+// })
