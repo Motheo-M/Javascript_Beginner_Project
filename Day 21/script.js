@@ -88,55 +88,79 @@
 // })
 
 // --------------------------------------------- Exercise 1 --------------------------------------------//
-console.log('// --------------------------------------------- Exercise 1 --------------------------------------------//')
+// console.log('// --------------------------------------------- Exercise 1 --------------------------------------------//')
 
-const allParaOne = document.querySelector('p');
-console.log(allParaOne);
+// const allParaOne = document.querySelector('p');
+// console.log(allParaOne);
 
-const onePara = document.querySelector('#first-par');
-const twoPara = document.querySelector('#second-par');
-const threePara = document.querySelector('#third-par');
-const fourPara = document.querySelector('#fourth-par');
+// const onePara = document.querySelector('#first-par');
+// const twoPara = document.querySelector('#second-par');
+// const threePara = document.querySelector('#third-par');
+// const fourPara = document.querySelector('#fourth-par');
 
-console.log(onePara);
-console.log(twoPara);
-console.log(threePara);
-console.log(fourPara);
+// console.log(onePara);
+// console.log(twoPara);
+// console.log(threePara);
+// console.log(fourPara);
 
-const allPara = document.querySelectorAll('p');
-console.log(allPara);
+// const allPara = document.querySelectorAll('p');
+// console.log(allPara);
 
-for(let i = 0; i < allPara.length; i++) {
-    console.log(allPara[i].innerHTML);
-    console.log(allPara[i].textContent);
-}
+// for(let i = 0; i < allPara.length; i++) {
+//     console.log(allPara[i].innerHTML);
+//     console.log(allPara[i].textContent);
+// }
 
-fourPara.textContent = 'I added this to the fourth';
-fourPara.innerHTML += '! Again!';
-console.log(fourPara.textContent);
+// fourPara.textContent = 'I added this to the fourth';
+// fourPara.innerHTML += '! Again!';
+// console.log(fourPara.textContent);
 
-onePara.setAttribute('class', 'First');
-twoPara.className = 'Second';
-threePara.className = 'Third';
-fourPara.classList.add('Again', 'Fourth');
+// onePara.setAttribute('class', 'First');
+// twoPara.className = 'Second';
+// threePara.className = 'Third';
+// fourPara.classList.add('Again', 'Fourth');
 
-console.log(onePara);
-console.log(twoPara);
-console.log(threePara);
-console.log(fourPara);
+// console.log(onePara);
+// console.log(twoPara);
+// console.log(threePara);
+// console.log(fourPara);
 
 // --------------------------------------------- Exercise 2 --------------------------------------------//
-console.log('// --------------------------------------------- Exercise 2 --------------------------------------------//')
+// console.log('// --------------------------------------------- Exercise 2 --------------------------------------------//')
 
-for(let i = 0; i < allPara.length; i++) {
-    if(i % 2 === 0) {
-        allPara[i].style.backgroundColor = '#607FFF';
-        allPara[i].style.color = '#FFE060';
-    } else {
-        allPara[i].style.color = '#607FFF';
-        allPara[i].style.backgroundColor = '#FFE060';
-    }
-}
+// for(let i = 0; i < allPara.length; i++) {
+//     if(i % 2 === 0) {
+//         allPara[i].style.backgroundColor = '#607FFF';
+//         allPara[i].style.color = '#FFE060';
+//     } else {
+//         allPara[i].style.color = '#607FFF';
+//         allPara[i].style.backgroundColor = '#FFE060';
+//     }
+// }
 
 // --------------------------------------------- Exercise 3 --------------------------------------------//
 console.log('// --------------------------------------------- Exercise 3 --------------------------------------------//')
+
+const box = document.querySelector('body');
+
+console.log(box);
+box.style.textAlign = 'center';
+
+
+const listLang = document.querySelectorAll('li');
+console.log(listLang);
+
+for(let i = 0; i < listLang.length; i++) {
+
+    listLang[i].style.listStyleType = 'none';
+    if(i === 0) {
+        listLang[i].style.backgroundColor = 'green';
+        listLang[i].style.padding = '10px 10px';
+        listLang[i].style.height = '50px';
+        listLang[i].style.width = '150px';
+    } else if (i === 1) {
+        listLang[i].style.backgroundColor = 'yellow';
+    } else if (i > 1) {
+        listLang[i].style.backgroundColor = 'red';
+    }
+}
