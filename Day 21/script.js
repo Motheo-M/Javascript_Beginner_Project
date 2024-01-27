@@ -138,29 +138,3 @@
 //     }
 // }
 
-// --------------------------------------------- Exercise 3 --------------------------------------------//
-console.log('// --------------------------------------------- Exercise 3 --------------------------------------------//')
-
-const box = document.querySelector('body');
-
-console.log(box);
-box.style.textAlign = 'center';
-
-
-const listLang = document.querySelectorAll('li');
-console.log(listLang);
-
-for(let i = 0; i < listLang.length; i++) {
-
-    listLang[i].style.listStyleType = 'none';
-    if(i === 0) {
-        listLang[i].style.backgroundColor = 'green';
-        listLang[i].style.padding = '10px 10px';
-        listLang[i].style.height = '50px';
-        listLang[i].style.width = '150px';
-    } else if (i === 1) {
-        listLang[i].style.backgroundColor = 'yellow';
-    } else if (i > 1) {
-        listLang[i].style.backgroundColor = 'red';
-    }
-}
